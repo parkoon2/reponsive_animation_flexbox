@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    box-sizing: border-box;
+    height: 328px;
+    width: 328px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05)
+}
+
+.box__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__info h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 42px;
+}
+
+.box__info p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.img-1 {
+    background-image: url('./images/djokovic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+}
+.img-2 {
+    background: url(./images/ferderer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+
+}
+.img-3 {
+    background: url(./images/isner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+
+}
+.img-4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),url(./images/murray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+
+}
+
+
+/* linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), */
