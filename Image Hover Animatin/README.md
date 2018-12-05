@@ -41,3 +41,8 @@ absolute
  - 얘는 기본위치가 아니어라 조상요소를 기준으로 움직인다.
 fixed
  - 기본위치 + 이동가능 + 스크롤 되어도 그 자리에~
+
+
+# hover 했을 때 생기게 하는 방법!
+기본 값에 transform: scaleX(0); transition: transform .5s 
+hover 됐을 때 transform: scaleX(1)
