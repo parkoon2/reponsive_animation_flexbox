@@ -1,0 +1,50 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    width: 300px;
+    height: 300px;
+    background: whitesmoke;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box:hover img {
+    transform: scale(1.2)
+}
+
+.container .box img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s
+}
+
+.container .box .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, .8);
+    /* 이 부분 뭐지? 딱 맞아 떨어지네.. */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+
+.container .box:hover .details {
+    transform: scaleX(1)
+}
+
+.container .box .details p {
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+}
