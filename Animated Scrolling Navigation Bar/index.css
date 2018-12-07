@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    transition: .5s;
+    background: transparent;
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    color: black;
+    transition: .5s;
+}
+
+.nav.black .logo {
+    color: white;
+}
+
+.nav.black {
+    height: 70px;
+    background: rgba(0,0,0,.7);
+}
